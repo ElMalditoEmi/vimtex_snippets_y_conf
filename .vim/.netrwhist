@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =5
+let g:netrw_dirhist_5='/home/emiemiemi/.vim'
+let g:netrw_dirhist_4='/home/emiemiemi'
+let g:netrw_dirhist_3='/home/emiemiemi/Documents/facu/redes_sist_dist/lab3/video/graficos/caso1_pt2'
+let g:netrw_dirhist_2='/home/emiemiemi/pjs/riscv-tools/riscv-isa-sim/scripts'
+let g:netrw_dirhist_1='/home/emiemiemi/Documents/facu/redes_sist_dist/redes24lab2g26/testdata'
+let g:netrw_dirhist_0='/home/emiemiemi/Documents/comelibro/redes_sist_dist_prepaso/lab2/.git'
+let g:netrw_dirhist_9='/home/emiemiemi/Documents/comelibro/redes_sist_dist_prepaso/lab2/.git/refs'
+let g:netrw_dirhist_8='/home/emiemiemi/Documents/comelibro/redes_sist_dist_prepaso/lab2/.git/refs/heads'
+let g:netrw_dirhist_7='/home/emiemiemi/Documents/comelibro/redes_sist_dist_prepaso/lab2/.git/refs'
+let g:netrw_dirhist_6='/home/emiemiemi/Documents/comelibro/redes_sist_dist_prepaso/lab2/.git'
