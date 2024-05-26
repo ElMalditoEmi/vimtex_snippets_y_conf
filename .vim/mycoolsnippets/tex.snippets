@@ -1,10 +1,31 @@
 # Large snipps
 snippet doc "document class"
 \documentclass{$2}
+%--- MATH SYMBOLS -------
 \usepackage{amsmath}
 \usepackage{amssymb}
+%--- Definition --------
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{prop}{Proposition}[section]
+%------utils------------
+\usepackage{imakeidx}
 \usepackage{blindtext}
-
+%--- Cajitas facheras ---
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\usepackage[skins]{tcolorbox}
+\tikzstyle{background rectangle}=[thin,draw=black]
+\newtcolorbox{myframe}[2] {%
+	enhanced,colback=white,colframe=black,coltitle=black,
+	sharp corners,boxrule=0.4pt,
+	fonttitle=\itshape,
+	attach boxed title to top left=(yshift=-0.3\baselineskip-0.4pt,xshift=2mm),
+	boxed title style={tile,size=minimal,left=0.5mm,right=0.5mm,
+	colback=white,before upper=\strut},
+	title=#2,#1
+}
+%---------------------------
 \title{$1}
 \author{Emilio Pereyra}
 \begin{document}
@@ -17,6 +38,25 @@ snippet box "text-scaled box"
 \fbox{$1}
 endsnippet
 
+snippet def "definition"
+\begin{definition}
+	$1
+\end{definition}
+$0
+endsnippet
+
+
+snippet teo "theorem"
+\begin{theorem}
+	$1
+\end{theorem}
+$0
+endsnippet
+
+snippet par "Paragraph"
+\paragraph{$1}
+endsnippet
+
 # Letras griegas
 snippet alph "Alpha"
 \alpha
@@ -24,12 +64,39 @@ endsnippet
 
 # Math blocks
 
+snippet <= "Menor o igual"
+\leq
+endsnippet
+
+snippet >= "Mayor o igual"
+\geq
+endsnippet
+
+snippet real "conjunto de los reales"
+\mathbb{R}
+endsnippet
+
 snippet eb "Equation block"
 \begin{equation}
 	\begin{aligned}
 		$1
 	\end{aligned}
 \end{equation}
+endsnippet
+
+snippet fp "piecewise function"
+$1 =
+\begin{cases}
+	$0 &\quad\text{otherwise.} \\
+\end{cases}
+endsnippet
+
+snippet inf "Infinidad"
+\infty
+endsnippet
+
+snippet vec "Vector con flechita"
+\vec{$1}^{\ }$0
 endsnippet
 
 snippet frac "Fraction"
